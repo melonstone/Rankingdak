@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Rankingdak/static/css/main.ab868ba2.css",
+    "main.js": "/Rankingdak/static/js/main.7aef2c8a.js",
+    "static/media/ico_img.png": "/Rankingdak/static/media/ico_img.d3871c7a0605292c78ec.png",
+    "static/media/heart-icon.png": "/Rankingdak/static/media/heart-icon.934c50e9506f94571ed6.png",
+    "static/media/ico_bullet.png": "/Rankingdak/static/media/ico_bullet.1591fa9445630b4e6614.png",
+    "static/media/ico_btns.png": "/Rankingdak/static/media/ico_btns.2d9fef7173248bfdeb76.png",
+    "static/media/icon_circle_left_arrow_black.svg": "/Rankingdak/static/media/icon_circle_left_arrow_black.511544af8604ba34e4de.svg",
+    "index.html": "/Rankingdak/index.html",
+    "main.ab868ba2.css.map": "/Rankingdak/static/css/main.ab868ba2.css.map",
+    "main.7aef2c8a.js.map": "/Rankingdak/static/js/main.7aef2c8a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab868ba2.css",
+    "static/js/main.7aef2c8a.js"
+  ]
+}

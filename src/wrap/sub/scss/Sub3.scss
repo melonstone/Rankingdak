@@ -1,0 +1,243 @@
+#sub3 {
+    width: 100%;
+    height: 100%;
+    .container {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 100px;
+        .title {
+            width: 100%;
+            height: 100%;
+            margin-top: 70px;
+            .m-title {
+                width: 100%;
+                height: 43px;
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    li {
+                        &.title-prev{
+                            button {
+                                border: 0;
+                                background: #fff;
+                                font-size: 17px;
+                                position: relative;
+                                cursor: pointer;
+                                &::before {
+                                    content: '';
+                                    width: 0;
+                                    height: 0;
+                                    position: absolute;
+                                    border-top: 5px solid transparent;
+                                    border-bottom: 5px solid transparent;
+                                    border-right: 5px solid #333;
+                                    border-left-color: #333;
+                                    top: 9px;
+                                    left: -5px
+                                }
+                                span {
+                                    padding-left: 15px;
+                                }
+                            }
+                           
+                        }
+                        &.title-center {
+                            font-weight: 700;
+                            font-size: 28px;
+                            padding: 0 35px;
+                            cursor: pointer;
+                        }
+                        &.title-next {
+                            button {
+                                border: 0;
+                                background: #fff;
+                                font-size: 17px;
+                                position: relative;
+                                cursor: pointer;
+                                &::after {
+                                    content: '';
+                                    width: 0;
+                                    height: 0;
+                                    position: absolute;
+                                    border-top: 5px solid transparent;
+                                    border-bottom: 5px solid transparent;
+                                    border-left: 5px solid #333;
+                                    border-left-color: #333;
+                                    top: 9px;
+
+                                }
+                                span {
+                                    padding-right: 15px;
+                                }
+                                
+                            }
+                        } 
+                    }
+                }
+            }
+            .banner {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+        .content {
+            width: 100%;
+            height: 100%;
+            max-width: 860px;
+            margin: 120px auto 0;
+            border-bottom: 2px solid #333;
+            .content-banner-top {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                a {
+                    display: block;
+                    img {
+                        width: 420px;
+                    }
+                }
+            }
+            .content-benefit {
+                width: 100%;
+                height: 100%;
+                margin-top: 70px;
+                >li {
+                    margin-top: 70px;
+                    .benefit-img {
+                        width: 860px;
+                        height: 340px;
+                        overflow: hidden;
+                        img {
+                            position: relative;
+                            top: -25%;
+                        }
+                    }
+                    .benefit-info {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        padding-top: 20px;
+                        .left-box {
+                            width: 50%;
+                            h2 {
+                                font-size: 24px;
+                                font-weight: 500;
+                                line-height: 120%;
+                            }
+                            h4 {
+                                padding-top: 15px;
+                                font-size: 17px;
+                                color: #555;
+                                line-height: 150%;
+                            }
+                        }
+                        .right-box {
+                            width: 50%;
+                            .list-box {
+                                width: 100%;
+                                display: flex;
+                                justify-content: flex-end;
+                                margin-left: 8px;
+                                .list {
+                                    width: 130px;
+                                    margin: 0 8px;
+                                    a {
+                                        background: #fff;
+                                        display: block;
+                                        position: relative;
+                                        
+                                        img {
+                                            width: 130px;
+                                            height: 130px;
+                                            margin-bottom: 10px;
+                                            position: relative;
+                                            background: transparent;
+
+                                            
+                                        }
+                                        span {
+                                            position: absolute;
+                                            z-index: 2;
+                                            top: 0;
+                                            left: 0;
+                                            width: 130px;
+                                            height: 130px;
+                                            background: rgba(0,0,0,0.5);  
+                                        }
+                                        
+                                        em {
+    
+                                            font-weight: 700;
+                                            padding: 0 5px 0 0;
+                                            font-size: 18px;
+                                            i {
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                color: #666;
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+            .content-MDsay {
+                padding-top: 110px;
+                h3 {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        width: 44px;
+                        height: 44px;
+                        background: #333;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: -60px;
+                        left: calc(50% - 20px);
+                        display: block;
+                        
+                    }
+                    text-align: center;
+                    font-size: 26px;
+                    line-height: 120%;
+                    &::after {
+                        content: "";
+                        width: 44px;
+                        height: 44px;
+                        background: url(../../../../public/images/sub/sub3/img_quotes.png) no-repeat;
+                        position: absolute;
+                        top: -43px;
+                        left: calc(50% - 6.5px);
+                        display: block;
+                    }
+                }
+                .md {
+                    padding: 30px 0 60px 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    span {
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        img {
+                            width: 40px;
+                        }
+                    }
+                    p {
+                        padding-left: 10px;
+                        font-size: 18px;
+                        color: #666;
+                    }
+                }
+            }
+        }
+    }
+}

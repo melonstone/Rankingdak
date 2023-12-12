@@ -1,0 +1,174 @@
+#signup-agreement {
+    width: 100%;
+    height: 100%;
+    #section1 {
+        width: 100%;
+        height: 100%;
+        background: #f7f7f7;
+        padding: 100px 0;
+        .container {
+            width: 720px;
+            margin: 0 auto;
+            height: 1000px;
+            background: #fff;
+            border-radius: 20px;
+            padding: 60px 100px 0 100px ;
+            .title {
+                color: #000;
+                text-align: left;
+                margin-bottom: 20px;
+                h2 {
+                    font-size: 28px;
+                    font-weight: 600;
+                    color: #333;
+                    line-height: 120%;
+                }
+                p {
+                    font-size: 13px;
+                    color: #999;
+                }
+                
+            }
+            .content {
+                width: 100%;
+                form {
+                    width: 100%;
+                    ul {
+                        width: 100%;
+                        li {
+                            width: 100%;
+                            .gap {
+                                width: 100%;
+                                padding: 8px 0;
+                                input[type='button'] {
+                                    width: 100%;
+                                    height: 50px;
+                                    font-size: 15px;
+                                    color: #fff;
+                                    background: #c7c7c7;
+                                    border-radius: 5px;
+                                    border: 1px solid #c7c7c7;
+                                    margin-top: 20px;
+                                    cursor: pointer;
+                                }
+                                .check {
+                                    width: 100%;
+                                    input[type='checkbox'] {
+                                        appearance: none;
+                                        width: 16px;
+                                        height: 12px;
+                                        border-radius: 3px;
+                                        background: url(../../../../public/images/sub/signup/ico-terms-off-1.png) no-repeat;
+                                        background-size: 16px 12px;
+                                        cursor: pointer;
+                                        &:checked {
+                                            background: url(../../../../public/images/sub/signup/ico-terms-on-1.png) no-repeat;
+                                            background-size: 16px 12px; 
+                                        }
+                                    }
+                                    
+                                    label {
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        height: 20px;
+                                        position: relative;
+                                        padding-left: 10px;
+                                        margin-right: 15px;
+                                        display: inline-flex;
+                                        align-items: center;
+                                        cursor: pointer;
+                                        .tag {
+                                            font-size: 12px;
+                                            color: #888;
+                                            font-weight: 400;
+                                            
+                                            &.tag1 {
+                                                padding-right: 5px;
+                                            }
+                                            &.tag2 {
+                                                padding-left: 5px;
+                                            }
+                                        }
+                                        span {
+                                            font-size: 13px;
+                                            font-weight: 400;
+                                            color: #666;
+                                            &.fullcheck {
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                color: #222;
+                                            }
+                                        }
+                                        
+                                    }
+                                    
+                                }
+                                >p {
+                                    font-size: 12px;
+                                    color: #999;
+                                    padding-left: 26px;
+                                }
+                                .txt-box{
+                                    height: 125px;
+                                    padding: 12px 12px;
+                                    background: #f7f7f7;
+                                    overflow-y: auto;
+                                    margin-top: 6px;
+                                    p {
+                                        font-size: 13px;
+                                        line-height: 130%;
+                                    }
+                                    table {
+                                        border-collapse: collapse;
+                                        col {
+                                            width: 30%;
+                                        }
+                                        tbody {
+                                            tr {
+                                                border-bottom: 1px solid #ddd;
+                                                th {
+                                                    padding: 15px 6px 15px 15px;
+                                                    font-size: 13px;
+                                                    line-height: 120%;
+                                                    vertical-align: top;
+                                                    height: 60px;
+                                                }
+                                                td {
+                                                    padding: 15px 0 15px 15px;
+                                                    font-size: 13px;
+                                                    line-height: 140%;
+                                                }
+                                                
+                                            }
+                                        }
+                                        
+                                    }
+                                    strong {
+                                        display: inline-block;
+                                        padding: 18px 40px 10px 40px;
+                                        font-size: 13px;
+                                        font-weight: 600;
+                                        line-height: 140%;
+                                    }
+                                    
+                                }
+                            }
+                            &.bar {
+                                border-bottom: 1px solid #ddd;
+                            }
+                            &.last-text {
+                                .gap {
+                                    >p {
+                                        padding: 0;
+                                        line-height: 150%;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

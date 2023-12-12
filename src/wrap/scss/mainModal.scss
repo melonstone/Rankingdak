@@ -1,0 +1,28 @@
+#mainModal{
+    position: fixed;
+    z-index: 6;
+    bottom: 0;
+    right: 21%;
+    width: 500px;
+    height: 220px;
+    background: transparent;
+    .container{
+        width: 100%;
+        height: 100%;
+        .modalImg{
+            img{
+                border-radius: 10px;
+            }
+        }
+        .Btn{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 40px;
+            height: 40px;
+            img{
+                width: 40px;
+            }
+        }
+    }
+}

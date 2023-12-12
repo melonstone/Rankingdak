@@ -1,0 +1,107 @@
+#sub6-cong {
+    width: 100%;
+    padding: 70px 0 100px 0;
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        .title {
+            width: 100%;
+            text-align: center;
+            h2 {
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+        .go-event {
+            position: absolute;
+            top: 0;
+            right: 5px;
+            margin-top: 60px;
+            height: 32px;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            a {
+                display: flex;
+                span {
+                    color: #666;
+                    font-size: 13px;
+                    line-height: 1.6;
+                    font-weight: 500;
+                }
+                i {
+                    width: 5px;
+                    height: 10px;
+                    margin-left: 5px;
+                    transform: translateY(2px);
+                }
+            }
+        }
+        .content {
+            width: 100%;
+            margin-top: 80px;
+            border-top: 1px solid #333;
+            .list-header {
+                width: 100%;
+                padding: 15px 20px;
+                border-bottom: 1px solid #ccc;
+                ul.column-box {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    li {
+                        text-align: center;
+                        color: #333;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 20px;
+                        &.col1 {width: 50px;}
+                        &.col2 {width: 570px;}
+                        &.col3 {width: 100px;}
+                        &.col4 {width: 100px;}
+                    }
+                }
+            }
+            ul.list-data {
+                width: 100%;
+                border-bottom: 1px solid #333;
+                > li {
+                    width: 100%;
+                    padding: 15px 20px;
+                    border-bottom: 1px solid #ccc;
+                    &:last-child {
+                        border: 0;
+                    }
+                    ul {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        li.col {
+                            text-align: center;
+                            span {
+                                color: #333;
+                                font-size: 14px;
+                            }
+                            &.col1 {
+                                width: 50px;
+                                span {
+                                    i {
+                                        display: inline-block;
+                                        width: 18px;
+                                        height: 14px;
+                                        background: url(../../../../public/images/sub/sub6/ico_bullet.png) no-repeat 0 0;
+                                    }
+                                }
+                            }
+                            &.col2 {width: 570px; text-align: left;}
+                            &.col3 {width: 100px;}
+                            &.col4 {width: 100px;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

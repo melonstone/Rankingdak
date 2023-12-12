@@ -1,0 +1,76 @@
+#signin-search-result {
+    width: 100%;
+    height: 100%;
+    #section1 {
+        width: 100%;
+        height: 100%;
+        background: #f7f7f7;
+        padding: 100px 0;
+        .container {
+            width: 720px;
+            margin: 0 auto;
+            height: auto;
+            background: #fff;
+            border-radius: 20px;
+            padding: 70px 150px 90px;
+            .content {
+                width: 100%;
+                ul {
+                    width: 100%;
+                    li {
+                        width: 100%;
+                        .gap {
+                            width: 100%;
+                            padding: 5px 0;
+                            text-align: center;
+                            &.gap2 {
+                                padding-top: 40px;
+                            }
+                            i {
+                                display: inline-block;
+                                width: 62px;
+                                height: 40px;
+                                background: url(../../../../public/images/sub/login/ico_img.png);
+                                background-position: -380px 0;
+                                
+                            }
+                            h3 {
+                                font-size: 22px;
+                                font-weight: 500;
+                                line-height: 120%;
+                                em {
+                                    font-size: 22px;
+                                    color: #ff6001;
+                                    vertical-align: top;
+                                }
+                            }
+                            strong {
+                                color: #FF6001;
+                                font-weight: 600;
+                            }
+                            button {
+                                width: 205px;
+                                height: 48px;
+                                border-radius: 8px;
+                                font-size: 15px;
+                                font-family: 'Pretendard';
+                                cursor: pointer;
+                                &.pwSearch {
+                                    background: #fff;
+                                    border: 1px solid #FF6001;
+                                    color: #FF6001;
+                                    margin-right: 10px;
+                                }
+                                &.check {
+                                    background: #FF6001;
+                                    border: 1px solid #FF6001;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,466 @@
+#header {
+    z-index: 3;
+    user-select: none;
+    position: relative;
+    width:100%;
+    height: auto;    
+    .row {
+        width:100%;       
+        .container {
+            width:100%;   
+            max-width: 1100px;
+            margin: 0 auto;
+            .content {
+                width:100%;
+            }
+        }
+        &.row1 {
+            height: 36px;
+            position: relative;
+            z-index: 3;
+            .container {
+                height: 100%;
+                .content {
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    #aside {
+                        font-size: 12px;   
+                        position: relative;
+                        right: 15px;
+                        span {
+                            em {
+                                display: inline-block;
+                                transform: translateY(-1px);
+                                color: #ff6001;
+                            }
+                            strong {
+                                display: inline-block;
+                                transform: translateY(-1px);
+                                color: #333;
+                            }
+                        }
+                        a {
+                            color:#333;     
+                        }
+                        i {
+                            display: inline-block;
+                            transform: translateY(1px);
+                            color:#ccc;
+                            margin:0 10px
+                        }                        
+                    }
+                }
+            }           
+        }
+        &.row2 {
+            height: 80px;
+            position: relative;
+            z-index: 2;
+            .container {
+                height: 100%;
+                .content {
+                    height: 100%;
+                    display: flex;
+                    .left {
+                        width:325px;height: 100%;
+                        display: flex;
+                        align-items: center;
+                        a {
+                            font-size: 18px;
+                            color:#ccc;
+                            font-weight: 500;
+                            img {width: auto;cursor: default;}
+                            span {margin: 0 0 0 20px;color:#5f0080;}
+                            &:nth-child(2){
+                                img {
+                                    vertical-align: top;
+                                    transform: translate(2px, 1px);
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        i{margin: 0 10px;color:#ddd;}
+                    }
+                    .center {
+                        width:400px;height: 100%;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        input {
+                            z-index: 1;
+                            position: relative;
+                            top: 4px;
+                            left: 10px;
+                            width: 380px;
+                            height: 40px;
+                            border: 1px solid #FFA751;
+                            color:#333;
+                            font-size: 13px;
+                            border-radius: 6px;
+                            padding: 0 45px 0 15px;
+                            outline-offset: -1px;
+                            outline: 0;
+                            &.on { 
+                                border-radius: 6px 6px 0 0;
+                                border-bottom: none;
+                            }
+                        }
+                        button {
+                            z-index: 2;
+                            position: absolute;
+                            top:25px;
+                            right:15px;
+                            width:35px;
+                            height:35px;
+                            border:0;
+                            background: none;
+                            cursor: pointer;
+                            img {
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                        .search-box {                            
+                            width: 380px;
+                            font-size: 13px;
+                            min-height: 100px;
+                            position: absolute;
+                            top: 75%;
+                            left: 10px;
+                            background: #fff;
+                            border: 1px solid #FFA751;
+                            border-radius: 6px;
+                            border-top: none;
+                            display: none;
+                            &.on{
+                                display: block;
+                            }
+                            .tit-area {
+                                padding: 12px 15px;
+                                width: 100%;
+                                h2 {
+                                    text-align: left;
+                                    font-size: 13px;
+                                    line-height: 20px;
+                                }
+                            }
+                            .rank-area {
+                                width: 100%;
+                                padding: 0 15px;
+                                overflow: hidden;
+                                .list {
+                                    position: relative;
+                                    display: flex;
+                                    gap: 10px 30px;
+                                    width: 100%;
+                                    height: calc(20px * 5 + 10px * 4);
+                                    flex-flow: column wrap;
+                                    li {                                        
+                                        a {
+                                            em {
+                                                display: inline-block;
+                                                width: 14px;
+                                                margin-right: 6px;
+                                                text-align: center;
+                                                vertical-align: middle;
+                                                font-size: 13px;
+                                                color: #222;
+                                                font-weight: 500;}
+                                            span {
+                                                display: inline-block;
+                                                vertical-align: middle;
+                                                font-size: 13px;
+                                                white-space: nowrap;
+                                                width: 110px;
+                                                color: #333;
+                                            }
+                                            .rank {
+                                                width: 30px;
+                                                left: calc(14px + 6px + 110px + 5px);
+                                                font-size: 11px;
+                                                color: #FFA751;                                                
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .search-bottom {
+                                border-top: 1px solid #e6e6e6;
+                                margin-top: 16px;
+                                .tit2-area {
+                                    position: relative;
+                                    padding: 12px 15px 6px;
+                                    display: flex;
+                                    height: calc(12px * 2 + 20px);
+                                    align-items: center;
+                                    h3 {
+                                        font-size: 13px;
+                                        color: #333;
+                                        
+                                        text-align: left;
+                                    }
+                                }
+                                .no-area {
+                                    padding: 23px 0 25px;
+                                    font-size: 13px;
+                                    line-height: 16px;
+                                    text-align: center;
+                                    color: #999;
+                                }
+                                .last-search {
+                                    padding-bottom: 15px;
+                                }
+                            }                            
+                        }                        
+                    }
+                    .right {
+                        width:325px;height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        position: relative;
+                        left: 3%;
+                        top: 5%;
+                        > span {                            
+                            > a {
+                                margin: 0 0 0 12px;
+                                > img {
+                                    width:48px;
+                                    height: 48px;
+                                }
+                            }
+                        }                        
+                    }
+                }
+            }    
+        }
+        &.row3 {
+            width: 100%;
+            height: 57px;
+            position: relative;
+            z-index: 1;
+            &.fixed {
+                z-index: 3;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: #fff;
+                box-shadow: 0 3px 7px rgba(0,0,0,  0.07);
+            }
+            .container {
+                width: 100%;
+                height: 100%;
+                .content {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    .left {
+                        width:225px;height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        div {
+                            font-size: 16px;
+                            color: #222;
+                            font-weight: 500;
+                            position: relative;
+                            text-align: center;
+                            cursor: pointer;
+                            img {width: auto}
+                            span {margin: 0 0 0 10px}
+                            a {     
+                                position: absolute;
+                                top: 0;
+                                left: 130px;
+                                color: #eee;                                
+                            }
+                        }                        
+                    }
+                    .category-box {
+                        flex-flow: column;
+                        position: absolute;
+                        left: 0;
+                        top: 100%;
+                        width: 1920px;
+                        height: 100px;
+                        background: #fff;
+                        border-top: 1px solid #eee;
+                        display: none;
+                        .category-main {
+                            position: relative;
+                            width: 1100px;
+                            margin: 0 auto;
+                            .category {
+                                display: flex;
+                                width: 100%;
+                                max-width: 1100px;
+                                height: 100px;
+                                position: relative;
+                                z-index: 3;
+                                justify-content: center;
+                                .prev-btn{
+                                    position: relative;
+                                    z-index: 1;
+                                    top: 30%;
+                                    width: 27px;
+                                    height: 44px;
+                                    cursor: pointer;
+                                    i {
+                                        width: 15px;
+                                        height: 15px;
+                                        color: #000;
+                                    }
+                                }                          
+                                .category-list {
+                                    // overflow: hidden;
+                                    position: relative;
+                                    z-index: 10;                                    
+                                    width: 1100px;
+                                    height: 100px;
+                                    padding: 5px 0;  
+                                    overflow: hidden;
+                                    li {
+                                        width: 2100px;
+                                        height: 90px;
+                                        display: flex;
+                                        text-align: center;
+                                        vertical-align: center;
+                                        a {
+                                            display: inline-flex;
+                                            flex-flow: column; 
+                                            flex-direction: column;
+                                            align-items: center;
+                                            justify-content: flex-start;
+                                            padding-top: 16px;
+                                            width: 100%;
+                                            max-width: 90px;
+                                            height: 90px;
+                                            img {
+                                                width: 30px;
+                                                height: 30px;
+                                            }
+                                            span {
+                                                vertical-align: middle;
+                                                display: inline-block;
+                                                font-size: 13px;
+                                                line-height: 14px;
+                                                margin-top: 8px;
+                                                word-break: keep-all;
+                                            }                                    
+                                            &:hover {
+                                                span {
+                                                    color: #ff6001;
+                                                }
+                                                &::after {
+                                                    content: "";
+                                                    background-color: #ff6001;
+                                                    display: block;
+                                                    position: absolute;
+                                                    bottom: 0;
+                                                    width: 90px;
+                                                    height: 2px;
+                                                    z-index: 2;
+                                                }   
+                                            }
+                                        }                                
+                                    }
+                                }
+                                .next-btn{      
+                                    position: relative;
+                                    z-index: 1;
+                                    display: inline-block;
+                                    top: 30%;
+                                    right: 0;
+                                    width: 27px;
+                                    height: 44px;
+                                    cursor: pointer;
+                                    i {
+                                        width: 15px;
+                                        height: 15px;
+                                        color: #000;
+                                    }
+                                }                                           
+                            }
+                        }
+                        &.on {
+                            display: block;
+                        }
+                    }
+                    .sec-box {
+                        width: 1920px;
+                        height: auto;
+                        min-height: 62px;
+                        background: #f8f8f8;
+                        position: absolute;
+                        left: 0;
+                        top: 157px;
+                        padding: 20px 0 10px;
+                        display: none;
+                        ul {
+                            position: relative;
+                            left: 22%;
+                            justify-content: center;
+                            width: 1100px;
+                            height: auto;
+                            li {
+                                width: 174px;
+                                margin-bottom: 16px;
+                                display: inline-block;
+                                span {
+                                    font-size: 14px;
+                                    color: #666;
+                                    &:hover {
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                        &.on {
+                            display: block;
+                        }
+                    }
+                    .center {
+                        width:960px;height: 100%;
+                        nav {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            a {
+                                font-size: 16px;
+                                font-weight: 500;
+                                display: flex;                                                               
+                                background: #fff;
+                                color:#222;
+                                align-items: center;
+                                padding-bottom: 3px;
+                                border-bottom: 1px solid transparent;
+                                transition: all 0.3s;                                
+                            }
+                        }
+                    }
+                    .right {
+                        width:225px;height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        a {
+                            img {
+                                display: inline-block;
+                                width: 90px;
+                                height: 17px;
+                                overflow: hidden;                                
+                                position: relative;
+                                top: 1px;
+                                right: 50px;                                
+                            }
+                        }
+                    }
+                }
+            }    
+        }            
+    }
+}

@@ -1,0 +1,276 @@
+.product-slide {
+    width: 100%;
+    height: 100%;
+    margin-top: 90px; // 임시
+    user-select: none;
+    .container {
+        width: 100%;
+        max-width: 1150px;
+        height: 100%;
+        margin: 90px auto 0;
+        .title {
+            width: 100%;
+            margin-bottom: 30px;
+            h1 {
+                font-size: 30px;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+        .content {
+            width: 100%;
+            height: 100%;
+            .slide-container {
+                width: 100%;
+                max-width: 1150px;
+                height: 100%;
+                position: relative;
+                .slide-view {
+                    width: 100%;
+                    height: 100%;
+                    padding: 0 25px;
+                    position: relative;
+                    z-index: 1;
+                    overflow: hidden;
+                    .slide-wrap {
+                        position: relative;
+                        width: 282px * 4;
+                        height: 100%;
+                        display: flex;
+                        .slide {
+                            width: 282px;
+                            height: 100%;
+                            .gap {
+                                width: auto;
+                                margin-right: 25px;
+                                .img-box {
+                                    width: 100%;
+                                    a {
+                                        width: 100%;
+                                        display: block;
+                                        position: relative;
+                                        .main-img {
+                                            width: 100%;
+                                            img {
+                                                position: relative;
+                                                z-index: 1;
+                                                width: 100%;
+                                                height: auto;
+                                                border-radius: 10px;
+                                            }
+                                            
+                                        }
+                                        .main-sticker {
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            z-index: 1;
+                                            display: flex;
+                                            gap: 4px;
+                                            padding: 8px;
+                                              
+                                        }
+                                    }
+                                }
+                                .info-box {
+                                    width: 100%;
+                                    margin-top: 12px;
+                                    a {
+                                        width: 100%;
+                                        .delivery-star {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            .delivery {
+                                                width: 64px;
+                                                height: 20px;
+                                                &.special {
+                                                    display: block;
+                                                    width: 64px;
+                                                    height: 20px;
+                                                    background: url(../../../../public/images/intro/section3/txt_badge_dlv.png) no-repeat 0 0;
+                                                }
+                                                &.free {
+                                                    display: block;
+                                                    width: 64px;
+                                                    height: 20px;
+                                                    background: url(../../../../public/images/intro/section3/txt_badge_dlv.png) no-repeat 0 -30px;
+                                                }
+                                            }
+                                            .star {
+                                                display: flex;
+                                                .star-icon {
+                                                    width: 15px;
+                                                    height: 15px;
+                                                    background: url(../../../../public/images/intro/section3/ico_bullet.png) no-repeat -90px -160px;
+                                                }
+                                                .total-score {
+                                                    font-size: 13px;
+                                                    color: #444;
+                                                    padding-right: 2px;
+                                                }
+                                                .total-num {
+                                                    font-size: 13px;
+                                                    color: #888;
+                                                }
+                                            }
+                                        }
+                                        h4 {
+                                            font-size: 17px;
+                                            font-weight: 700;
+                                            color: #444;
+                                        }
+                                        h3 { // 상품명
+                                            height: auto; // 대부분 44px 로 높이 잡아놔서 그냥 똑같이 높이 잡음
+                                            padding-top: 5px;
+                                            font-size: 16px;
+                                            line-height: 140%;
+                                            color: #444;
+                                            &.on {
+                                                height: 44px;
+                                            }
+                                        }
+                                        .price {
+                                            width: 100%;
+                                            display: flex;
+                                            padding-top: 10px;
+                                            font-size: 18px;
+                                            
+                                            strong {
+                                                font-weight: 700;
+                                                padding-right: 5px;
+                                                color: #FF3600;
+                                                i {
+                                                    font-size: 14px;
+                                                }
+                                                &.on {
+                                                    display: none;
+                                                }
+                                            }
+                                            em {
+                                                font-weight: 700;
+                                                padding: 0 5px 0 0;
+                                                i {
+                                                    font-size: 14px;
+                                                    font-weight: 400;
+                                                    color: #666;
+                                                    
+                                                }
+                                            }
+                                            h5 {
+                                                font-size: 14px;
+                                                line-height: 130%;
+                                                text-decoration: line-through;
+                                                color: #999;
+                                            }
+                                        }
+                                        p {
+                                            padding-top: 10px;
+                                            font-size: 11px;
+                                            color: #777;
+                                        }
+                                        .sub-sticker {
+                                            display: inline-flex;
+                                            margin-top: 10px;
+                                            
+                                            i {
+                                                margin-right: 5px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .prev-allow-btn-box {
+                    position: absolute;
+                    z-index: 2;
+                    top: calc(257px / 2) - 20px;
+                    left: 5px;
+                    .prev-allow-btn {
+                        position: relative;
+                        background: #fff;
+                        width: 40px;
+                        height: 40px;
+                        border: 0;
+                        border-radius: 50%;
+                        box-shadow: 0 3px 6px rgba($color: #000, $alpha: 0.2);
+                        cursor: pointer;
+                        &.on {
+                            opacity: 0.4;
+                        }
+                    }
+                    ::before {
+                        content: "";
+                        position: relative;
+                        display: inline-block;
+                        margin: 0 -3px -1px 0;
+                        width: 8px;
+                        height: 8px;
+                        border: #555;
+                        border-style: solid;
+                        border-width: 0 2px 2px 0;
+                        transform: rotate(135deg);
+                    }
+                }
+                .next-allow-btn-box {
+                    position: absolute;
+                    z-index: 2;
+                    top: calc(257px / 2) - 20px; // 이미지 257/2 - 20(버튼 40px 중 20px)
+                    right: 5px; 
+                    .next-allow-btn {
+                        position: relative;
+                        background: #fff;
+                        width: 40px;
+                        height: 40px;
+                        border: 0;
+                        border-radius: 50%;
+                        box-shadow: 0 3px 6px rgba($color: #000, $alpha: 0.2);
+                        cursor: pointer;
+                        &.on {
+                            opacity: 0.4;
+                        }
+                    }
+                    ::before {
+                        content: "";
+                        position: relative;
+                        display: inline-block;
+                        margin: 0 0 -1px -3px;
+                        width: 8px;
+                        height: 8px;
+                        border: #555;
+                        border-style: solid;
+                        border-width: 0 2px 2px 0;
+                        transform: rotate(-45deg);
+                    }
+                }
+                .bottom-btn-box {
+                    margin-top: 40px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    .refresh {
+                        width: 300px;
+                        height: auto;
+                        padding: 15px 32px;
+                        background: #fff;
+                        border: 1px solid #ccc;
+                        border-radius: 30px;
+                        cursor: pointer;
+                        span {
+                            font-size: 15px;
+                            text-align: center;
+                            color: #777;
+                            font-weight: 600;
+                        }
+                        i {
+                            padding-left: 10px;
+                            img {}
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
